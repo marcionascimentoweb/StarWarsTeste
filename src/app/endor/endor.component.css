@@ -1,0 +1,238 @@
+/* reset */
+body, h1, h2, p, ul{
+  padding: 0px;
+  margin: 0px;
+  }
+
+/* 1024 x 768 */
+
+/* Fundo */ 
+.fundoEstrelas{
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: fixed;
+  margin: 0 auto;
+  overflow-y: hidden; /* retirar scroll */
+  overflow-x: hidden; /* retirar scroll */
+  }
+
+.tela{
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 6;
+  background-color: aqua;
+  }
+
+.planeta{
+  width: 300px;
+  height: 300px;
+  float: left;
+  position: relative;
+  z-index: 3;
+  margin: 234px auto  auto;
+  }
+
+  .centro{
+    float: left;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 4;
+    padding: 10px 0 10px 0;
+    margin-top: 100px;
+    }
+
+ .card{
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+  font-family: 'IBM Plex Sans', sans-serif;
+  padding: 10px 0 10px 0;
+}
+
+.cardCabecalho{
+  width: 300px;
+  height: 86px;
+  background-color: #FEFEFE;
+  font-family: star jedi logo monoLine;
+  color: #383780;
+  padding: 2px;
+  font-size: 40px;
+  text-align: center;
+  text-shadow: 1px 1px 10px #FFF;
+  border-radius: 10px; 
+}
+
+.cardCorpo{
+  width: 300px;
+  height: 257px;
+  background-color: #0098da;
+  font-size: 20px;
+  text-align: center;
+  color:#383780;
+  padding: 2px;
+  margin-top: 2px;
+  border-radius: 10px;
+}
+
+li{
+  list-style: none;
+  background-color: darkblue;
+  margin: 20px;
+  color: white;
+  border-radius: 8px;
+}
+
+.botao{
+  width: 170px;
+  height: 70px;
+  float: left;
+  z-index: 4;
+  background: red;
+  position: relative;
+  border-radius: 30px;
+  margin: 0 0 0 70px;
+  display: block;
+  
+}
+
+.botaoEvento{
+  width: 100%;
+  height: 100%;
+  font-family: IBM Plex Mono SemiBold;
+  font-size: 30px;
+  color: #252525;
+  text-align: center;
+  background-color: red;
+  border: none;
+  padding: 5px;
+  text-transform: uppercase;
+  
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  font-family: star jedi logo monoLine;
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  margin: auto 0 ;
+  padding: 10px 0 30px 0;
+  display: inline-block;
+  background-color: black;
+  border: none;
+  }
+
+  button :hover{
+    background-color: white;
+    color: black;
+  }
+
+
+.personagemendor{
+  float: right;
+  width: 301px;
+  height: 587px;
+  position: relative;
+  z-index: 2;
+  margin-top: 380px;
+}
+
+li{
+  text-align: center;
+  margin-top: 30px;
+  background-color: blue;
+  color: white;
+}
+
+
+/* ----------------------------------------------------*/
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.container::after, .container::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+	display: block;
+	min-height: 1px;
+}
+
+.grid-1 {
+	width: calc(8.333% - 20px);
+}
+.grid-2 {
+	width: calc(16.666% - 20px);
+}
+.grid-3 {
+	width: calc(25% - 20px);
+}
+.grid-4 {
+	width: calc(33.333% - 20px);
+}
+.grid-5 {
+	width: calc(41.666% - 20px);
+}
+.grid-6 {
+	width: calc(50% - 20px);
+}
+.grid-7 {
+	width: calc(58.333% - 20px);
+}
+.grid-8 {
+	width: calc(66.666% - 20px);
+}
+.grid-9 {
+	width: calc(75% - 20px);
+}
+.grid-10 {
+	width: calc(83.333% - 20px);
+}
+.grid-11 {
+	width: calc(91.666% - 20px);
+}
+.grid-12 {
+	width: calc(100% - 20px);
+}
+
+@media (max-width: 739px) {
+	.container {
+		max-width: 300px;
+	}
+	.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+		float: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

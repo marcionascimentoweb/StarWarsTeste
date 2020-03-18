@@ -1,0 +1,162 @@
+/* Reset */
+*{
+  margin: 0; padding: 0; 
+  }
+
+  .container-fluid{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+    }
+
+  .container{
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    overflow-y: hidden; /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    overflow-x: hidden;
+    }
+
+    .container::before, .container::after{
+      content: '';
+      display: table;
+    }
+
+    .container::after{
+      clear: both;
+    }
+
+  .topo{
+   background-color: none;
+   position: relative;
+   z-index: 3;
+   }
+
+  .personagem1{
+    width: 200px;
+    height: 250px;
+    margin: 100px auto 0px auto;
+    }
+
+  .base{
+    margin-top: 190px;
+    z-index: 4;
+    position: relative;
+    }
+
+  .ldDireito{
+    display: inline-block;
+  }
+
+  .centro {
+    float: left;
+    padding: 5px;
+    }
+
+  .personagem2{
+    float: left;
+  }
+
+.logo {
+  font-family: Star Jedi logo monoline;
+  color: #FEFEFE;
+  padding: 5px;
+  
+  }
+
+.logo p {
+  text-align: center;
+  font-size: 80px;
+  
+}
+
+.botao {
+  float: left;
+  width: 300px;
+  height: 64px;
+  background-image: linear-gradient(to bottom, #FDB92E, #FFF212); /*degrade no botão*/
+  border-radius: 20px;
+  box-shadow: inset 0.3em 0.3em #FEFEFE; /*sombra*/
+  text-align: center;
+  background-color: none;
+  }
+
+.botao p{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  border: none;
+  background-color: none ;
+}
+
+button{
+  background-color: none ;
+  background: none;
+  border: none;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.ldEsquerdo{
+  float: right;
+}
+
+  .personagem3{
+    width: 312px;
+    height: 410px;
+    float: right;
+    z-index: 10;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12 {
+	margin-left: 5px;
+	margin-right: 5px;
+	float: left;
+	display: block;
+	min-height: 1px;
+}
+
+.grid-1 {
+	width: calc(8.333% - 20px);
+}
+.grid-2 {
+	width: calc(16.666% - 20px);
+}
+.grid-3 {
+	width: calc(25% - 20px);
+}
+.grid-4 {
+	width: calc(33.333% - 20px);
+}
+.grid-5 {
+	width: calc(41.666% - 20px);
+}
+.grid-6 {
+	width: calc(50% - 20px);
+}
+.grid-7 {
+	width: calc(58.333% - 20px);
+}
+.grid-8 {
+	width: calc(66.666% - 20px);
+}
+.grid-9 {
+	width: calc(75% - 20px);
+}
+.grid-10 {
+	width: calc(83.333% - 20px);
+}
+.grid-11 {
+	width: calc(91.666% - 20px);
+}
+.grid-12 {
+	width: calc(100% - 20px);
+}
+

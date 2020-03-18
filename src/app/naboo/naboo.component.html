@@ -1,0 +1,70 @@
+
+<body>
+  <!--Fundo de Estrelas-->
+  <div class='container-fluid'>
+    <div class="fundoEstrelas grid-12">
+      <img [src] ="fundo">
+    </div>
+  </div>
+
+  <!--tela-->
+  <div class="tela">
+    
+      <!--Planeta-->
+      <div class='planeta grid-4'>
+        <div class='container'>
+          <img [src]='planetaImg'>
+        </div>  
+      </div>
+
+  <div class="centro grid-4">
+    <div class="container">
+
+      <!--Card-->
+      <div class='card'>
+        <div>
+          <!--Cabeçalho-->
+            <div class='cardCabecalho'>
+              <p>Naboo</p>
+            </div>
+          <!--Corpo-->
+            <div class='cardCorpo'>
+              <ul>
+                <li>NAME: {{ varPlaneta.name }}</li>
+                <li>CLIMATE: {{ varPlaneta.climate }}</li>
+                <li>TERRATION: {{ varPlaneta.terrain }}</li> 
+                <li>POPULATION: {{ varPlaneta.population }}</li>
+              </ul>
+                            
+              </div>
+            </div>
+          </div>
+        
+
+        <!--Botao-->
+          <div class="botao">
+            <button class="botaoEvento"(click)="next()">NEXT</button>
+          </div>
+
+        <!--Logo-->
+          <div class="logo">
+              <button (click)="telaInicial()">
+            <p>STAR<br> WARS</p>
+          </button>
+            
+         </div>
+        
+    </div>
+    </div>
+
+    <!--Personagem-->
+     <div class="personagemnaboo grid-4">
+          <div class='container'>
+            <img [src] = "personagemnaboo">
+          </div>
+        </div>
+
+  </div>
+  
+  </body>
+    

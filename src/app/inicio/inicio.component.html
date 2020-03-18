@@ -1,0 +1,71 @@
+
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+<style>
+   @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+   </style>
+
+<div class="container-fluid">
+   <!--Fundo-->
+   <div class="FundoEstrelas">
+      <img [src]="fundo"/>
+   </div>
+</div>
+
+   <!--Topo-->
+   <div class="topo">
+      <div class="container">
+         <!--personagem1-->
+         <div class="personagem1">
+            <img [src]="personagem1">
+         </div>
+      </div>
+   </div>
+
+      <!--Base-->
+      <div class="base">
+         <div class="container">
+
+            <!--Lado direito-->
+            <div class="ldDireito grid-4">
+               <div class="container">
+                  <div class="personagem2">
+                     <img [src]="personagem2">
+                  </div>
+               </div>
+            </div>
+
+            <!--Centro-->
+            <div class="centro grid-4">
+               <div class="container">
+
+                  <!--Logotipo Star Wars-->
+                        <div class="logo">
+                           <p>STAR</p>
+                           <p>WARS</p>            
+                        </div>
+
+                  <!--Botao-->
+                     <div class="botao" >
+                        <div class="container">
+                           <button (click)="iniciar()"><p>INICIAR JOGO</p>
+                           </button>   
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+             
+             <!--LdEsquerdo-->
+               <div class="ldEsquerdo grid-4">
+                  <div class="container">
+                     <div class="personagem3">
+                        <img [src]="personagem3">
+                     </div>   
+                  </div>
+               </div>
+
+            </div>
+         </div>
+
+
